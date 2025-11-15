@@ -4,20 +4,40 @@ This project is a complete automation pipeline to scrape, extract, and batch-dow
 
 The system supports:
 ✔️ Batch downloading from a JSON list of Xiaohongshu post URLs
+
+
 ✔️ Automatic extraction of metadata (caption, username, post ID, media links)
+
+
 ✔️ Automatic video downloading
+
+
 ✔️ Robust error handling (timeout retries, invalid links, edge cases)
+
+
 ✔️ Fully containerized API using Docker
+
+
 ✔️ Optional integration with n8n workflows
+
+
 ✔️ Clean directory structure (downloads/, debug/, results/)
+
+
 ✔️ Human-readable logs & result reports
 
 
 🚀 Project Architecture
 xhs-batch
 │── app_playwright_update.py   # Flask API with Playwright automation
+
+
 │── xhs_batch_download.py      # Batch processing script
+
+
 │── Dockerfile                 # Full environment containerization
+
+
 │── links.json                 # List of Xiaohongshu post URLs
 │── downloads/                 # Automatically downloaded media
 │── results/                   # Results report containing metadata
