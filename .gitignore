@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+*.whl
+pip-wheel-metadata/
+env/
+venv/
+ENV/
+.env
+.python-version
+
+# Byte-compiled / caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Playwright
+playwright-report/
+playwright/.local-browsers/
+node_modules/
+# If you kept browser downloads in project, ignore them
+.browsers/
+
+# Downloads / artifacts
+downloads/
+debug/
+results.json
+results.log
+
+# Docker
+docker-compose.override.yml
+.env.docker
+Dockerfile*
+docker-compose*.yml
+**/Dockerfile
+**/.dockerignore
+
+# Virtualenvs
+.venv/
+.env/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# macOS
+*.DS_Store
+
+# JetBrains
+.idea/
+
+# Misc
+*.swp
+*.swo
+
