@@ -29,8 +29,15 @@ The system supports:
 ✔️ Human-readable logs & result reports
 
 
+
+
+
 🚀 Project Architecture
+
+
 xhs-batch
+
+
 │── app_playwright_update.py   # Flask API with Playwright automation
 
 
