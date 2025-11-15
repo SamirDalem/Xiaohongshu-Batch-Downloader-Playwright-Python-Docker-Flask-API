@@ -3,6 +3,8 @@ This project is a complete automation pipeline to scrape, extract, and batch-dow
 
 
 The system supports:
+
+
 ✔️ Batch downloading from a JSON list of Xiaohongshu post URLs
 
 
@@ -39,37 +41,69 @@ xhs-batch
 
 
 │── links.json                 # List of Xiaohongshu post URLs
+
+
 │── downloads/                 # Automatically downloaded media
+
+
 │── results/                   # Results report containing metadata
+
+
 │── debug/                     # Screenshots, HTML dumps for failed runs
 
 
 🔧 Tech Stack
+
+
 Python 3.12
+
+
 Playwright (Chromium)
+
+
 Flask REST API
+
+
 Docker & Docker Desktop
+
+
 PowerShell + Bash scripting
+
+
 n8n workflow automation (optional)
 
 
 📦 Running the API in Docker
 
 1. Build the container
+
+   
 docker build -t xhs-playwright-api:latest .
 
-2. Run the API
+3. Run the API
+
+
 docker run -d -p 6000:6000 -v "${PWD}:/work" --name xhs-playwright-api xhs-playwright-api:latest
 
-3. Test the /extract API
+5. Test the /extract API
 Send a POST request:
+
+
 POST http://localhost:6000/extract
+
+
 {
   "url": "https://www.xiaohongshu.com/explore/<post-id>"
 }
 
+
+
 📥 Batch Download Mode
+
+
 Place URLs inside links.json:
+
+
 [
   "https://www.xiaohongshu.com/explore/123",
   "https://www.xiaohongshu.com/explore/456"
